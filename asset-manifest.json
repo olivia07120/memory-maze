@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/memory-maze/static/css/main.90fda9cb.css",
+    "main.js": "/memory-maze/static/js/main.48ec1bf3.js",
+    "static/js/453.4a7c84a6.chunk.js": "/memory-maze/static/js/453.4a7c84a6.chunk.js",
+    "index.html": "/memory-maze/index.html",
+    "main.90fda9cb.css.map": "/memory-maze/static/css/main.90fda9cb.css.map",
+    "main.48ec1bf3.js.map": "/memory-maze/static/js/main.48ec1bf3.js.map",
+    "453.4a7c84a6.chunk.js.map": "/memory-maze/static/js/453.4a7c84a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.90fda9cb.css",
+    "static/js/main.48ec1bf3.js"
+  ]
+}
