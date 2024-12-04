@@ -3,6 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@devcycle/openfeature-web-provider": "^0.18.1",
+    "@devcycle/react-client-sdk": "^1.30.1",
+    "@openfeature/js-sdk": "^1.6.1",
+    "@openfeature/react-sdk": "^0.4.9",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
