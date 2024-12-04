@@ -45,7 +45,7 @@ function AppContent() {
   const [currentImage, setCurrentImage] = useState(null);
 
   const isDarkTheme = useBooleanFlagValue('dark-theme', false);
-  const gameTheme = useStringFlagValue('game-theme', 'autumn-harvest');
+  const gameTheme = useStringFlagValue('game-theme', 'autumnHarvest');
   const isDifficultyEnabled = useBooleanFlagValue('difficulty-hard', false);
 
   useEffect(() => {
