@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Memory Maze Game
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Memory Maze is an interactive React-based game that challenges players' memory and observation skills. The game leverages DevCycle SDK and OpenFeature provider for feature flagging and dynamic content delivery, allowing for a customizable and evolving gaming experience.
 
-## Available Scripts
+Website live at: https://olivia07120.github.io/memory-maze/
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Multiple themed levels with increasing difficulty
+- Dynamic content based on feature flags
+- Animated questions for enhanced difficulty
+- Score tracking and level progression
+- Dark/Light theme toggle
+- Responsive design for various screen sizes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Technologies Used
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- React: A JavaScript library for building user interfaces
+- DevCycle SDK: For feature flag management
+- OpenFeature provider: For standardized feature flagging
+- CSS Animations: For enhanced visual effects
 
-### `npm test`
+## Setup and Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
+   ```
+   git clone https://github.com/olivia07120/memory-maze.git
+   ```
 
-### `npm run build`
+2. Navigate to the project directory:
+   ```
+   cd memory-maze
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+4. Set up your DevCycle account and obtain your client key
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+5. Create a `config.js` file in the `src` directory with your DevCycle client key:
+   ```javascript
+   const config = {
+     DEVCYCLE_CLIENT_KEY: 'your_client_key_here'
+   };
+   
+   export default config;
+   ```
 
-### `npm run eject`
+6. Start the development server:
+   ```
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Game Rules
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Start the game by clicking "Start Your Adventure!"
+2. Observe the displayed image or animated scene carefully
+3. Answer the multiple-choice question about what you observed
+4. Progress through levels by answering correctly
+5. The game ends when you complete all levels or answer incorrectly
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Feature Flags
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The game utilizes the following feature flags:
 
-## Learn More
+- `dark-theme`: Toggles between dark and light theme
+- `game-theme`: Sets the current game theme (e.g., 'autumnHarvest', 'halloween', etc.)
+- `difficulty-hard`: Enables animated questions for increased difficulty
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Project Structure
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `src/App.js`: Main component handling game logic and state
+- `src/RoomDisplay.js`: Component for displaying room contents
+- `src/AnimatedQuestion.js`: Component for rendering animated questions
+- `src/utils/themeUtils.js`: Utility functions for theme management
+- `src/questions/`: Directory containing question sets for different themes
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-### Analyzing the Bundle Size
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## License
 
-### Making a Progressive Web App
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgements
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- DevCycle for providing feature flagging capabilities
+- OpenFeature for standardized feature management
+- React community for excellent documentation and support
